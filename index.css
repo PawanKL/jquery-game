@@ -1,0 +1,11 @@
+.img{
+    border: 1px solid #cecece;
+}
+img { 
+    width:  150px;
+    height: 170px;
+    background-size: cover;
+}
+.container-fluid{
+    margin-bottom: 2%;
+}
