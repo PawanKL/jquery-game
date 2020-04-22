@@ -13,8 +13,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
   <body>
-    <div class="container">
-
+    <div class="container" style="margin-top: 2%;">
+      <div class="container-fluid">
+      <div class="form-row text-center">
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary" id="start">Start</button>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="restart" hidden=true>Restart</button>
+      </div>
+     </div>
+    </div>
     </div>
     <div class="container" style="border: 1px solid #cecece; margin-top: 5%;">
       <div class="container-fluid">
@@ -129,19 +138,20 @@
         <p>Status:</p>
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 img">
-            <p>Time: <span id="time_left">60</span> Seconds</p>
+            <p>Time: <span id="time_left">120</span> Seconds</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 img">
-            <p>Score: <span id="score">10</span></p>
+            <p>Score: <span id="score">0</span></p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 img">
-            <p>Level: <span id="level">60</span></p>
+            <p>Level: <span id="level">1</span></p>
           </div>
         </div>
       </div>
     </div>
     <audio src="hurray.mp3" id="hurray"></audio>
     <audio src="sad.mp3" id="sad"></audio>
+    <script src="variables.js"></script>
     <script src="game.js"></script>
     </script>
   </body>
